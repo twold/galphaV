@@ -11,9 +11,7 @@ type Request struct {
 	HTTPRequest  *http.Request
 	HTTPResponse *http.Response
 	Body         io.ReadCloser
-	Params       interface{}
 	Error        error
-	Data         interface{}
 }
 
 func New(method, Url string, body io.Reader) *Request {

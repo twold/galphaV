@@ -33,7 +33,7 @@ type Builder interface {
 	Function(function string) (*Client, error)
 	OutputSize(outputsize string) (*Client, error)
 	Symbols(symbols ...string) *Client
-	Do(method string) (*Client, error)
+	Do(method string) (*request.Request, error)
 }
 
 // create new client with default settings
@@ -130,7 +130,7 @@ func (c *Client) Symbols(symbols ...string) *Client {
 	return c
 }
 
-func (c *Client) Do(method string) (*Client, error) {
+func (c *Client) Do(method string) (*request.Request, error) {
 	values := make(map[string][]string)
 
 	// Required input
@@ -187,5 +187,5 @@ func (c *Client) Do(method string) (*Client, error) {
 	if c.Error != nil {
 		return nil, c.Error
 	}
-	return c, nil
+	return c.Request, nil
 }
