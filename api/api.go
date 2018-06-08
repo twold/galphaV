@@ -1,4 +1,4 @@
-// galphaV api package contains primary application interface.
+// package api contains primary application interface.
 package api
 
 import (
@@ -6,7 +6,7 @@ import (
 	"github.com/twold/galphaV/request"
 )
 
-type API interface {
+type ServicerAPI interface {
 	GetTimeSeriesDaily(symbols ...string) ([]*TimeSeriesDaily, error)
 
 	GetTimeSeriesDailyAdjusted(symbols ...string) ([]*TimeSeriesDailyAdjusted, error)

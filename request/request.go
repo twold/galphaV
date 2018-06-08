@@ -1,4 +1,4 @@
-// galphaV request package contains interface used in HTTP request operations for alphavantage APIs.
+// package request contains interface used in HTTP request operations for alphavantage APIs.
 package request
 
 import (

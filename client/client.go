@@ -1,4 +1,4 @@
-// galphaV client package contains interface used to build and validate client requests.
+// package client contains interface used to build and validate client requests.
 package client
 
 import (

@@ -1,4 +1,4 @@
-// galphaV endpoints package builds endpoint using default inputs and parameters from client and request pacakges.
+// package endpoints builds endpoint using default inputs and parameters from client and request pacakges.
 package endpoints
 
 import (
