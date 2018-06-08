@@ -1,3 +1,4 @@
+// sample main function built as a local client.
 package main
 
 import (
@@ -30,7 +31,7 @@ func init() {
 
 }
 
-// sample input where $QUANDLAPIKEY is your api key and $GOPATH/src/github.com/twold/go-quandl/data
+// sample input where $AVAPIKEY is your api key and $GOPATH/src/github.com/twold/galphaV/data
 // is where you have input file and is desired output location
 
 // to pull all data
@@ -57,6 +58,7 @@ func setFilter(sector, symbol string) *string {
 	return nil
 }
 
+// https://www.alphavantage.co/documentation/
 func main() {
 
 	// parse input flags

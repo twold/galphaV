@@ -1,9 +1,16 @@
+// galphaV api package contains primary application interface.
 package api
 
 import (
 	"github.com/twold/galphaV/client"
 	"github.com/twold/galphaV/request"
 )
+
+type API interface {
+	GetTimeSeriesDaily(symbols ...string) ([]*TimeSeriesDaily, error)
+
+	GetTimeSeriesDailyAdjusted(symbols ...string) ([]*TimeSeriesDailyAdjusted, error)
+}
 
 type Config struct {
 	Name string `json:"Name"`

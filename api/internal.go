@@ -1,3 +1,4 @@
+// galphaV api package contains primary application interface.
 package api
 
 import (
