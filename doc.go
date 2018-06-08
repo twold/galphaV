@@ -1,7 +1,5 @@
 // Golang package for hitting the alphavantage APIs
 //
-// import "github.com/twold/galphaV"
-//
 // The primary interfaces for accessing API functions are found in the api
 // package. Lower level operations including auth, input validation, and
 // endpoint configurations can be found in the client, endpoints and request
