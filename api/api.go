@@ -6,7 +6,12 @@ import (
 	"github.com/twold/galphaV/request"
 )
 
+// ServicerAPI
+// use command below to generate updated interface:
+// grep "func (c \*Service) " $GOPATH/src/github.com/twold/galphaV/api/api.go | sed -n 's/func (c \*Service) //p' | sed -n $'s/ {/\\\n/p'
 type ServicerAPI interface {
+	Full() *Service
+
 	GetTimeSeriesDaily(symbols ...string) ([]*TimeSeriesDaily, error)
 
 	GetTimeSeriesDailyAdjusted(symbols ...string) ([]*TimeSeriesDailyAdjusted, error)
